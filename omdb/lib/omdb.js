@@ -24,7 +24,7 @@ function get(title, done) {
                 done(error);
             }
 
-            if (result.Response === 'False') return done(new Error('Moovie not found'))
+            if (result.Response === 'False') return done(new Error('Movie not found'))
 
             done(null, result);
         })
